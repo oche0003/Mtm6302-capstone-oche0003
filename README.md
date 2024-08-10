@@ -65,7 +65,7 @@ The design is super minimalistic to keep the focus on the images, which are the 
 - **Responsive Design:** Making sure the app looks good on all devices took some extra testing and tweaking in the CSS.
 
 ## How to Use
-1. **Open the App:** Load up `index.html` in your web browser.
+1. **Open the App:** Load up `pod.nasa.gov/apod/astropix.html` in your web browser.
 2. **View Today’s APOD:** The app will automatically load today’s Astronomy Picture of the Day.
 3. **Pick a Different Date:** Use the date input to select a different day’s APOD.
 4. **Save to Favorites:** Click "Save to Favorites" to keep an image in your favorites.

@@ -46,7 +46,7 @@ function saveToFavorites() {
         date: apodDate.textContent,
         explanation: apodExplanation.textContent,
         url: apodImage.src,
-        hdurl: apodImage.src // assuming this is the HD image URL
+        hdurl: apodImage.src 
     };
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     favorites.push(favorite);
@@ -56,7 +56,7 @@ function saveToFavorites() {
 
 // Display favorite images in the gallery
 function displayFavorites() {
-    favoritesGallery.innerHTML = ''; // Clear existing content
+    favoritesGallery.innerHTML = ''; 
     const imagePaths = [
         'images/2024 August 7.jpg',
         'images/2024 August 6.jpg',
@@ -76,12 +76,12 @@ function displayFavorites() {
     });
 }
 
-// Function to toggle the display of the favorites section
+//  toggle the display of the favorites section
 function toggleFavorites() {
     if (favoritesSection.style.display === 'none' || favoritesSection.style.display === '') {
         favoritesSection.style.display = 'block';
         toggleButton.textContent = 'Hide Favourites';
-        displayFavorites(); // Ensure favorites are displayed when the section is shown
+        displayFavorites(); 
     } else {
         favoritesSection.style.display = 'none';
         toggleButton.textContent = 'Show Favourites';
@@ -97,5 +97,5 @@ document.querySelector('#dateForm').addEventListener('submit', event => {
 
 // Initial setup
 updateDateTime();
-setInterval(updateDateTime, 60000); // Update date and time every minute
+setInterval(updateDateTime, 60000); 
 toggleButton.addEventListener('click', toggleFavorites);
