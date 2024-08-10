@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header and Footer Styles */
 header,
 footer {
     text-align: center;
@@ -25,62 +27,6 @@ header p a {
 }
 
 header p a:hover {
-    text-decoration: underline;
-}
-
-.content {
-    width: 100%;
-    padding: 20px;
-}
-
-.content h2 {
-    text-align: center;
-
-}
-
-.center-text {
-    margin-top: 0;
-    text-align: center;
-}
-
-
-.content .video-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.content .video-container iframe {
-    width: 100%;
-    height: 600px;
-    max-width: 1000px;
-    height: 500px;
-}
-
-.content h3 {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.content p {
-    margin: 20px 0;
-}
-
-nav.navbar {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-radius: 5px;
-    border-width: 100%;
-}
-
-nav.navbar a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #0066cc;
-}
-
-nav.navbar a:hover {
     text-decoration: underline;
 }
 
@@ -105,6 +51,148 @@ footer p {
     padding: 0;
 }
 
+/* Content Styles */
+.content {
+    width: 100%;
+    padding: 20px;
+}
+
+.content h2,
+.content h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-text {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Video Container Styles */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 600px;
+    max-width: 1000px;
+    height: 500px;
+}
+
+/* Form Styles */
+#dateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#dateForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#dateForm input[type="date"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#dateForm button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dateForm button:hover {
+    background-color: #004c99;
+}
+
+/* APOD Image Styles */
+#apodImage {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Favorites Button Styles */
+.side-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.side-button:hover {
+    background-color: #004c99;
+}
+
+/* Favorites Section Styles */
+.favorites-section {
+    margin-top: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery a {
+    display: block;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar Styles */
+nav.navbar {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+nav.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+nav.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Date and Time Styles */
+#currentDateTime {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Media Query for Responsiveness */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.5em;

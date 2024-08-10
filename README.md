@@ -1,55 +1,75 @@
-# NASA APOD API
+# NASA APOD API Web Application
 
 ## About
-This repository contains the project files for the NASA APOD API web application developed by Perpetual Ocheme as part of their coursework.
+This repository contains the project files for the NASA APOD (Astronomy Picture of the Day) API web app developed by Perpetual Ocheme for an interactive media design course.
 
 ## Student Information
-- Name: Perpetual Ocheme
-- Student Number: 41093118
+- **Name:** Perpetual Ocheme
+- **Student Number:** 41093118
 
 ## Project Overview
-The objective of this project is to design and develop a web application using the NASA APOD (Astronomy Picture of the Day) API. The application will display a daily image or photograph of our fascinating universe along with a brief explanation written by a professional astronomer. Users will be able to view the image, read the explanation, and navigate through different dates to explore more pictures.
+This project is all about creating a simple web app that uses the NASA APOD API to show daily images of cool astronomical stuff. Users can view the daily image, read a brief explanation, and check out images from different dates. You can even save your favorite images and view them in a gallery.
 
-# Design Choices for the Capstone Mockup
-
-## Overview
-The design for the capstone project mockup was deliberately kept simple and minimalistic. The main focus is on the image content, which is the key component of the mockup. Here are the detailed design choices and the rationale behind them:
+## Features
+- **View APOD:** See the Astronomy Picture of the Day for today or any date you choose.
+- **Pick a Date:** Select a date and fetch the APOD for that day.
+- **Favorites Gallery:** Save your favorite APODs and toggle a gallery view to see them all in one place.
+- **Responsive Design:** Works well on different devices, whether it's a phone, tablet, or computer.
 
 ## Design Choices
 
-### 1. **Simplicity**
-The overall design is kept simple without any unnecessary elements. This helps in maintaining clarity and ensuring that the mockup is easy to understand and navigate.
+### Keeping It Simple
+The design is super minimalistic to keep the focus on the images, which are the main content. There’s no extra fluff, so users can easily navigate and enjoy the content.
 
-### 2. **No Colors**
-- **Choice:** The design does not use any colors.
-- **Reason:** This choice ensures that the images remain the primary focus. By avoiding colors, we prevent any distraction and draw the viewer’s attention directly to the images and content.
+### Focus on Content
+- **Images First:** The images are the main attraction, so the design lets them shine without distractions.
+- **Easy-to-Read Text:** The explanations and titles are clear and easy to read.
 
-### 3. **Focus on Images**
-- **Choice:** Images are the central elements of the mockup.
-- **Reason:** The images represent the core content and functionality of the project. Highlighting them allows users to quickly grasp the main features and design intentions.
-
-### Layout
-- **Consistency:** The layout is consistent throughout the mockup.
-- **Readability:** Text elements are spaced appropriately to ensure readability.
-- **Alignment:** All elements are aligned in a structured manner to provide a clean and organized look.
+### Consistent Layout
+- **Same Look Throughout:** The layout is consistent across all parts of the app to make navigation easy.
+- **Centered Content:** Important elements are centered to make the app look clean and organized.
 
 ## Recent Changes
 
-### 2024-07-04
+### 2024-08-10
 
-#### Content and Layout Adjustments
-- **HTML Adjustments:**
-  - Added a class `center-text` to the `<p>` element containing the video illustration credit to center-align it.
-  - Ensured the content spans the full width of the page and removed any max-width constraints.
+#### Functional Improvements
+- **JavaScript Tweaks:**
+  - Added functionality to save and show favorite images using `localStorage`.
+  - Improved error handling for when the API fetch fails.
+  - Added a toggle button to show or hide the favorites gallery.
 
-- **CSS Adjustments:**
-  - Updated `.content` to `width: 100%;` and added `padding: 20px;` to ensure full-page width usage.
-  - Set `text-align: center;` for `.center-text` to center-align the specific paragraph.
-  - Adjusted `nav.navbar` to include only `border-top` and `border-bottom` to remove side borders.
+- **Content and Layout Adjustments:**
+  - Made sure the APOD content updates without needing to reload the page.
+  - Improved the layout so it looks good on all screen sizes, from mobile to desktop.
 
-- **Visual and Functional Improvements:**
-  - Ensured the navigation bar spans almost the full width with padding on both sides.
-  - Centered specific text elements to improve readability and visual appeal.
+- **Visual and Functional Enhancements:**
+  - Tidied up the design for a more polished look.
+  - Added a date and time display so users know when they’re browsing.
+
+## Technical Details
+
+### HTML Structure
+- **Index.html:** The structure is simple, with sections for the APOD display, date selection, and the favorites gallery.
+
+### CSS Styling
+- **Main.css:** The styles make sure the app is responsive and looks clean. Flexbox is used to manage the layout, especially for the gallery.
+
+### JavaScript Functionality
+- **Fetch API:** Used to get data from the NASA APOD API.
+- **LocalStorage:** Saves user favorites so they can access them later, even after closing the browser.
+- **Event Listeners:** Used for things like picking a date, saving favorites, and toggling the gallery.
+
+### Challenges
+- **Dealing with Asynchronous Data:** It was tricky to manage fetching data from the API and updating the page without refreshing, but this was handled with the Fetch API.
+- **Responsive Design:** Making sure the app looks good on all devices took some extra testing and tweaking in the CSS.
+
+## How to Use
+1. **Open the App:** Load up `index.html` in your web browser.
+2. **View Today’s APOD:** The app will automatically load today’s Astronomy Picture of the Day.
+3. **Pick a Different Date:** Use the date input to select a different day’s APOD.
+4. **Save to Favorites:** Click "Save to Favorites" to keep an image in your favorites.
+5. **Show Favorites:** Click "Show Favorites" to view all your saved images in a gallery.
 
 ## Conclusion
-The design decisions were made with the intention of creating a clean, distraction-free mockup that emphasizes the visual content. By keeping the design simple and avoiding colors, we ensure that the images stand out and the overall design remains user-friendly and accessible. Recent changes focused on improving layout consistency and centering key elements for better visual structure.
+This NASA APOD web app was built with a focus on simplicity and usability. By sticking to a clean design and using some cool web tech, the app makes it easy to explore and save amazing images of the universe.
